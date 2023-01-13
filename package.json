@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "blitz dev",
-    "build": "blitz build",
+    "build": "NODE_ENV=production blitz build && blitz prisma migrate deploy",
     "start": "blitz start",
     "studio": "blitz prisma studio",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
@@ -33,6 +33,7 @@
     "@hookform/resolvers": "2.9.10",
     "@prisma/client": "4.0.0",
     "blitz": "2.0.0-beta.22",
+    "downshift": "7.1.2",
     "framer-motion": "8.4.2",
     "next": "12.2.0",
     "prisma": "4.0.0",

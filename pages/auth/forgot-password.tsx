@@ -1,9 +1,9 @@
 import Layout from "app/core/layouts/Layout"
-import { LabeledTextField } from "app/core/components/LabeledTextField"
-import { Form, FORM_ERROR } from "app/core/components/Form"
 import { ForgotPassword } from "app/auth/validations"
 import forgotPassword from "app/auth/mutations/forgotPassword"
 import { useMutation } from "@blitzjs/rpc"
+import Form, { FORM_ERROR } from "app/core/components/form/form"
+import { LabeledTextField } from "app/core/components/form/fields/labeled-text-field"
 
 const ForgotPasswordPage = () => {
   const [forgotPasswordMutation, { isSuccess }] = useMutation(forgotPassword)
