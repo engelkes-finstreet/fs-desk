@@ -6,4 +6,5 @@ const Home: BlitzPage = () => {
   )
 }
 
+
 export default Home
